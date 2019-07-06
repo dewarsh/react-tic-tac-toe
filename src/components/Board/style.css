@@ -1,0 +1,42 @@
+.board-row1:after,
+.board-row2:after,
+.board-row3:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.board-row1 .square:first-child {
+    border:hidden;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+.board-row1 .square:last-child {
+    border: hidden;
+    border-left: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+.board-row1 .square:not(:first-child){
+    border-top: hidden;
+}
+.board-row2 .square:first-child {
+    border-left: hidden;
+}
+.board-row2 .square:last-child {
+    border-right: hidden;
+}
+.board-row3 .square:first-child {
+    border-left: hidden;
+    border-bottom: hidden;
+}
+.board-row3 .square:not(:first-child){
+    border-bottom: hidden;
+}
+.board-row3 .square:last-child {
+    border-right: hidden;
+    border-bottom: hidden;
+}
+
+.status {
+  margin-bottom: 10px;
+}
